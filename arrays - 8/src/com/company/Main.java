@@ -20,6 +20,7 @@ public class Main {
 
     System.out.println("Suma brojeva u koloni 1 je: " + sumaKolone1);
     System.out.println("Suma brojeva u redu 2 je: " + sumaReda2);
+    System.out.println("Njihova ukupna suma je: " + (sumaKolone1 + sumaReda2));
 
     }
 }
