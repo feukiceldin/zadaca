@@ -14,18 +14,21 @@ public class Main {
         double num1 = scanner.nextDouble();
         double num2 = scanner.nextDouble();
 
-        num1 += 3;
-        num1 *= 5;
-        num1 /= 2;
-        num1 -= 6;
+        double sumResult = num1 + num2;
+        double subResult = num1 - num2;
+        double multiplyResult = num1 * num2;
+        double divisionResult = num1 / num2;
+        double moduloResult = num1 % num2;
 
-        num2 += 2;
-        num2 *= 3;
-        num2 /= 4;
-        num2 -= 7;
+        System.out.println("Sum result: " + sumResult);
+        System.out.println("Subtraction result: " + subResult);
+        System.out.println("Multiplication result: " + multiplyResult);
+        System.out.println("Division result: " + divisionResult);
+        System.out.println("Modulo result: " + moduloResult);
 
-        System.out.println("After arithmetic operations your numbers look like: " + num1 + " and " + num2 + ".");
-        System.out.println("The larger one is: " + Math.max(num1, num2));
+        double maxResult = Math.max(Math.max(Math.max(Math.max(sumResult, subResult), multiplyResult), divisionResult), moduloResult);
+
+        System.out.println("The largest one is: " + maxResult);
 
         System.out.println();
 
