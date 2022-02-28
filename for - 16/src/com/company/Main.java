@@ -11,13 +11,19 @@ public class Main {
         System.out.print("Unesite string: ");
         String string = scanner.nextLine();
 
-        String[] stringArr = string.toString().split(" ");
-        String stringBezSpace = "";
+        String[] stringArr = string.split(" ");
 
+        for(i = 0; i < stringArr.length; i++){
+            System.out.println(stringArr[i]);
+        }
+
+        System.out.println();
+
+        /*String stringBezSpace = "";
         for(i = 0; i < stringArr.length; i++){
             stringBezSpace = stringBezSpace + stringArr[i];
         }
-        System.out.println("String bez praznih mjesta: " + stringBezSpace + "\n");
+        System.out.println("String bez praznih mjesta: " + stringBezSpace + "\n");*/
 
         int[][] arr = new int[3][3];
         System.out.println("Pomozi popuniti niz!");
